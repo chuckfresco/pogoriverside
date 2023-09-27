@@ -25,19 +25,19 @@ const Main = ({ children, themeToggler, themeMode }) => {
       id: 'supported-pages',
       children: {
         career: {
-          groupTitle: 'Chuck\'s Picks',
+          groupTitle: 'Riverside Picks',
           pages: [
             {
-              title: 'Card Explorer',
-              href: 'https://www.axieworld.com/en/tools/cards-explorer',
+              title: 'Pokemon Go Best Moves',
+              href: 'https://pokemon.gameinfo.io/',
             },
             {
-              title: 'PvP LeaderBoard (Live)',
-              href: 'https://axie.zone/leaderboard',
+              title: 'Pokemon Go Events',
+              href: 'https://leekduck.com/events/',
             },
             {
-              title: 'Axie Gene Reader',
-              href: 'https://freakitties.github.io/axie/jeans.html',
+              title: 'PVP Best Pokemon',
+              href: 'https://pvpoke.com/rankings/all/1500/overall/',
             },
           ],
         },

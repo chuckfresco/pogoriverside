@@ -240,10 +240,10 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
   return (
     <Toolbar disableGutters className={classes.toolbar} {...rest}>
       <div className={classes.logoContainer}>
-        <a href="/" title="Chuck Fresco">
+        <a href="/" title="Pokemon Go Riverside">
           <Image
             className={classes.logoImage}
-            src={themeMode === 'light' ? '/assets/chuck-fresco-logo-light.svg' : '/assets/chuck-fresco-logo-dark.svg'}
+            src={themeMode === 'light' ? '/assets/pogo-riverside-logo-long.svg' : '/assets/pogo-riverside-logo-long.svg'}
             alt="ChuckFresco"
             lazy={false}
           />
@@ -318,8 +318,9 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
               target="blank"
               href="https://marketplace.axieinfinity.com/profile/ronin:e2d63c7d27f6c01bb1a182f2014c4f1f4602c7d2/axie?sort=PriceDesc"
               className={classes.listItemButton}
+              disabled={true}  
             >
-              Marketplace
+              Events
             </Button>
           </ListItem>
         </List>

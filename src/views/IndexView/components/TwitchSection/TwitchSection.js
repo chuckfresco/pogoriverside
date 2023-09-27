@@ -57,7 +57,7 @@ const TwitchSection = props => {
             <Grid item xs={12}>
               <SectionHeader
                 title="Follow Me On Twitch"
-                subtitle="Follow my stream to learn more about Axie and a chance to win Axie Giveaways"
+                subtitle="Follow my stream to learn more about Pokemon Go battles"
                 ctaGroup={[
                   <Button
                     variant="contained"

@@ -37,19 +37,20 @@ const Community = props => {
   return (
     <div className={className} {...rest}>
       <SectionHeader
-        title="Join the Fresco Scholarship Axie community"
-        subtitle="Join players discussing the world of Axie Infinity and earning scholarships by participating"
+        title="Join the Pokemon Go Riverside Discord community"
+        subtitle="Join players looking for raids and meet ups for Riverside events"
         ctaGroup={[
           <Button
             variant="contained"
             size={isMd ? 'large' : 'medium'}
             color="primary"
+            disabled={true}
             onClick={(e) => {
               e.preventDefault();
-              window.open("https://discord.gg/6Fry8jcTPk", "_blank");
+              window.open("", "_blank");
               }}
           >
-            Join now
+            Coming Soon
           </Button>,
         ]}
       />

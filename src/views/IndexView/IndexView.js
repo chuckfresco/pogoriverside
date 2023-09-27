@@ -47,9 +47,9 @@ const IndexView = ({ themeMode }) => {
 
  
 
-      <SectionAlternate>
+ {/*      <SectionAlternate>
         <QuickStart />
-      </SectionAlternate>
+      </SectionAlternate> */}
 
       <Section narrow>
         <Community data={gallery} />

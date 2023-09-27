@@ -75,8 +75,8 @@ const TopBar = ({
           <a href="/" title="Chuck Fresco">
             <Image
               className={classes.logoImage}
-              src={themeMode === 'light' ? '/assets/chuck-fresco-logo-light.svg' : '/assets/chuck-fresco-logo-dark.svg'}
-              alt="Chuck Fresco"
+              src={themeMode === 'light' ? '/assets/pogo-riverside-logo-long.svg' : '/assets/pogo-riverside-logo-long.svg'}
+              alt="Pokemon"
               lazy={false}
             />
           </a>

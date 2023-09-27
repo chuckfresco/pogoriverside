@@ -1,11 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
-import { Button, Typography } from '@material-ui/core';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
+
+import { Button, Typography, useMediaQuery } from '@material-ui/core';
 import { SectionHeader, TypedText } from 'components/molecules';
 import { HeroShaped } from 'components/organisms';
 import { HashLink } from 'react-router-hash-link';
+import TwitterIcon from '@material-ui/icons/Twitter';
+
 
 const useStyles = makeStyles(theme => ({
   fontWeight900: {
@@ -42,7 +45,7 @@ const useStyles = makeStyles(theme => ({
     },
   },
   imageAnimation: {
-    background: `url("/assets/axie-infinity-images.png")`,
+    background: `url("/assets/pokemon-go-list.jpg")`,
     backgroundRepeat: 'repeat',
     backgroundAttachment: 'scroll',
     backgroundSize: '400px auto',
@@ -58,7 +61,7 @@ const useStyles = makeStyles(theme => ({
     }
   },
   imageAnimationDark: {
-    background: `url("/assets/axie-infinity-images.png")`,
+    background: `url("/assets/pokemon-go-list.jpg")`,
   },
   '@keyframes slideshow': {
     '0%': {
@@ -73,9 +76,11 @@ const useStyles = makeStyles(theme => ({
 const Hero = ({ themeMode = 'light', className, ...rest }) => {
   const classes = useStyles();
 
+
+
   const title = (
     <Typography variant="h2" component="span" className={classes.fontWeight900}>
-      Your go to place for everything
+      Your go to place for Pokémon Go
       <br />
       <TypedText
         component="span"
@@ -84,11 +89,11 @@ const Hero = ({ themeMode = 'light', className, ...rest }) => {
         className={classes.fontWeight900}
         typedProps={{
           strings: [
-            'Axie Infinity',
-            'Axie Giveaways',
-            'Axie Guides',
-            'Axie Streams',
-            'NFTs',
+            'Riverside',
+            'Raids',
+            'Events',
+            'Meet Ups',
+            'Nests',
             'and much more...',
           ],
           typeSpeed: 50,
@@ -98,7 +103,7 @@ const Hero = ({ themeMode = 'light', className, ...rest }) => {
     </Typography>
   );
 
-  const subtitle = 'Weekly Axie Infinity Content and Giveaways'
+  const subtitle = 'Weekly Pokémon Go Riverside News and Events'
 
   const docsButton = (
     <Button size="large" variant="outlined" color="primary" component="a" href="/#" disabled={true} >
@@ -106,20 +111,24 @@ const Hero = ({ themeMode = 'light', className, ...rest }) => {
     </Button>
   );
 
-  const buyButton = (
-    <Button
-      size="large"
-      variant="contained"
-      color="primary"
-      component="a"
-    //  href="/#Giveaway"
-      smooth={true}
-      
-    >
+  const theme = useTheme();
+  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+    defaultMatches: true,
+  });
 
-      <HashLink smooth to="#Giveaway" style={{ color: '#FFFFFF' }}>Weekly Giveaway</HashLink>
-     
-    </Button>
+  const buyButton = (
+
+    
+    <Button
+    variant="contained"
+    //color="FF0202" 9347FF
+   // color="secondary"
+    style={{ background: '#1F9CEF', color: '#FFFFFF' }}
+    size={isMd ? 'large' : 'medium'}
+    href="https://twitter.com/pogoriverside"
+  >
+    Twitter     <TwitterIcon style={{ marginLeft: 5 }}></TwitterIcon>
+  </Button>
   );
 
   const leftSideContent = (
@@ -138,6 +147,10 @@ const Hero = ({ themeMode = 'light', className, ...rest }) => {
     />
   );
   return (
+
+
+
+    
     <div className={className} {...rest}>
       <HeroShaped
         className={classes.heroShaped}

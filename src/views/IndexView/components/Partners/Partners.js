@@ -29,10 +29,17 @@ const Partners = props => {
       <Grid container spacing={isMd ? 4 : 2}>
         <Grid item xs={12} md={6} >
           <SectionHeader
-            title="Who is Chuck Fresco?"
-            subtitle="Chuck Fresco is an American Axie Infinity player. He started his Axie journey February 2018 rolling his first Axies on stream. Winner of multiple championships and awards, Chuck continues to make content and tools to help the Axie Community."
+            title="Welcome to the Riverside Pokémon Go Community!"
+            subtitle={
+              <>
+              <p>Nestled along the scenic riverbanks, our dedicated group of Pokémon trainers are passionate about uniting local enthusiasts for thrilling raid battles, memorable meetups, and exciting events.</p>
+
+              </>
+            }
             fadeUp
             disableGutter
+
+            
 
             ctaGroup={[
               <Button
@@ -41,9 +48,9 @@ const Partners = props => {
                 color="primary"
                // style={{ background: 'primary', color: '#FFFFFF' }}
                 size={isMd ? 'large' : 'medium'}
-                href="https://youtu.be/ldZDTVvT5EI"
+                href="https://youtu.be/KgNZu1IFip8?si=j0CJ41MgajaX6aM9"
               >
-                First Stream
+                First Video
               </Button>,
                     <Button
                     variant="contained"
@@ -63,7 +70,7 @@ const Partners = props => {
               className: classes.title,
             }}
           />
-         <Grid container item xs={12} spacing={2} style={{ marginTop: 20 }} >
+{/*          <Grid container item xs={12} spacing={2} style={{ marginTop: 20 }} >
         {data.map((partner, index) => (
             <Grid
               item
@@ -84,7 +91,7 @@ const Partners = props => {
             </Grid>
           ))}
 
-  </Grid>
+  </Grid> */}
 
         </Grid>
         <Grid item container xs={12} md={6}>
@@ -99,9 +106,10 @@ const Partners = props => {
             data-aos={'fade-up'}
           >
             <Image
-              src="/assets/chuck-fresco-landing.jpg"
-              alt="Our story"
+              src="/assets/riverside-sign-1.webp"
+              alt="Pokemon Go Riverside"
               className={classes.image}
+              style={{ width: '100%', height: '100%' }}
             />
           </Grid>
          

@@ -200,7 +200,7 @@ const SidebarNav = props => {
           target="blank"
           href="https://marketplace.axieinfinity.com/profile/ronin:e2d63c7d27f6c01bb1a182f2014c4f1f4602c7d2/axie?sort=PriceDesc"
         >
-          Marketplace
+          Events
         </Button>
       </ListItem>
     </List>
